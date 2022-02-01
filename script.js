@@ -1,9 +1,10 @@
-setInterval(jam(), 1000);
-function jam(){
+setInterval(clock(), 1000);
+function clock(){
   w = new Date();
   j = w.getHours();
   m = w.getMinutes();
   d = w.getSeconds();
   
-  document.getElementById('jam').innerHTML = `<code>${j}:${m}:${d}</code>`;
+ pk = document.getElementById('jam')
+  pk.innerHTML = `<code>${j}:${m}:${d}</code>`;
 }
