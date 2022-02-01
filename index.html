@@ -1,35 +1,75 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belajar DOM Manipulation</title>
-    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
-  <style>
-    #jam {
-      font-size: 30px;
-    }
-  </style>
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
- 
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Belajar DOM Manipulation</title>
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+<style>
+body {
+  background-image: url('https://telegra.ph/file/10949cab70b5db8bfeb48.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 0.6;*/
+  /* opacity: 0.6;*/
+  position: absolute;
+  height: 100%;
+  z-index: 1;
+}
+#jam {
+  font-size: 30px;
+  background: #00ccff48;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+#typed {
+  font-family: Monospace;
+  font-size: 25px;
+  margin-top: 30px;
+  background-color: #182d32a8;
+  color: white;
+}
+</style>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-  </head>
+</head>
+
+<body>
+  <div class="bg"></div>
+    
   
-  <body>
-    <script>
-    Swal.fire(
-  'Selamat Datang!',
-  'diweb latihan saya <sub>Ridwan</sub>!',
-  'info'
-)
+<script>
+const nama = prompt("Nama mu?")
+Swal.fire(
+  `Selamat Datang!`,
+  `diweb latihan saya <sub>${nama[0].toUpperCase()}${nama.slice(1)}</sub>!`,
+  `info`
+  )
   </script>
   <center>
-   <div id="jam">
-     <!--BIKIN JAM COK!-->
-   </div>
- </center>
- 
-<script>
+  <div id="jam">
+  <!--BIKIN JAM COK!-->
+  </div>
+  </center>
+  
+  <!--typed-->
+<span id="typed"></span>
+  <script type="text/javascript" charset="utf-8">
+    let typed = new Typed("#typed",
+      {
+        strings: ['Saya adalah Ridwan, Murid SMK Bhina Karya angkatan 2022'
+          ],
+          typeSpeed: 100,
+          smartBackspace: true,
+          cursorChar: '__',
+      })
+  </script>
+  <!--Akhir typed-->
+  
+  
+  
+  <script>
   setInterval("clock()", 1000);
 function clock(){
   w = new Date();
@@ -47,7 +87,6 @@ function clock(){
   }
 }
 </script>
-
 
   </body>
 </html>
