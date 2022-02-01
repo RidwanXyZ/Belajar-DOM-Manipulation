@@ -5,5 +5,5 @@ function jam(){
   m = w.getMinutes();
   d = w.getSeconds();
   
-  document.getElementById('clock').innerHTML = `<code>${j}:${m}:${d}</code>`
+  document.getElementById('jam').innerHTML = `<code>${j}:${m}:${d}</code>`;
 }
