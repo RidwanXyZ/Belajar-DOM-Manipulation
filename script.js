@@ -1,4 +1,4 @@
-setInterval(clock(), 1000);
+setInterval("clock()", 1000);
 function clock(){
   w = new Date();
   j = w.getHours();
