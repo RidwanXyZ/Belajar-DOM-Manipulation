@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belajar DOM Manipulation</title>
     <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <style>
+    #jam {
+      font-size: 30px;
+    }
+  </style>
   </head>
   
   <body>
@@ -24,6 +29,12 @@ function clock(){
   
  pk = document.getElementById('jam')
   pk.innerHTML = `<code>${j}:${m}:${d}</code>`;
+  
+  if (j == "10" && m == "54"){
+    pk.innerHTML = "Madang Slurr"
+  } else {
+    
+  }
 }
 </script>
   </body>
