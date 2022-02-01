@@ -12,10 +12,10 @@ body {
   background-size: cover;
   background-attachment: fixed;
   /* opacity: 0.6;*/
-  /* opacity: 0.6;*/
+  /* opacity: 0.6;
   position: absolute;
   height: 100%;
-  z-index: 1;
+  z-index: 1;*/
 }
 #jam {
   font-size: 30px;
@@ -29,6 +29,10 @@ body {
   margin-top: 30px;
   background-color: #182d32a8;
   color: white;
+}
+.pk {
+  position: absolute;
+  bottom: 0px;
 }
 </style>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -55,18 +59,9 @@ Swal.fire(
   </center>
   
   <!--typed-->
-<span id="typed"></span>
-  <script type="text/javascript" charset="utf-8">
-    let typed = new Typed("#typed",
-      {
-        strings: ['Saya adalah Ridwan, Murid SMK Bhina Karya angkatan 2022'
-          ],
-          typeSpeed: 100,
-          smartBackspace: true,
-          cursorChar: '__',
-      })
-  </script>
+<div id="typed"></div>
   <!--Akhir typed-->
+  
   
   
   
@@ -88,6 +83,17 @@ function clock(){
   }
 }
 </script>
-<button type="submit"><a href="yo.html">Tailwind CSS</a></button>
+<button type="submit" class="pk"><a href="yo.html">Tailwind CSS</a></button>
+
+  <script type="text/javascript" charset="utf-8">
+    let typed = new Typed("#typed",
+      {
+        strings: ['Saya adalah Ridwan, Murid SMK Bhina Karya angkatan 2022'
+          ],
+          typeSpeed: 100,
+          smartBackspace: true,
+          cursorChar: '__',
+      })
+  </script>
   </body>
 </html>
