@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Belajar DOM Manipulation</title>
 <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 <style>
 body {
   background-image: url('https://telegra.ph/file/10949cab70b5db8bfeb48.jpg');
@@ -29,10 +31,21 @@ body {
   margin-top: 30px;
   background-color: #182d32a8;
   color: white;
+  position: relative;
 }
 .pk {
   position: absolute;
   bottom: 0px;
+}
+.buton {
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    line-height: 50px;
+   /* background: #333;*/
+    color: #fff;
+    position: absolute;
+    bottom: 0px;
 }
 </style>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -65,7 +78,25 @@ Swal.fire(
   
   
   
-  <script>
+ 
+<!--button-button-->
+<footer>
+<div class="buton">
+<button class="btn btn-primary" onclick="javascript:window.close()">Keluar</button>
+</div>
+</footer>
+
+  <script type="text/javascript" charset="utf-8">
+    let typed = new Typed("#typed",
+      {
+        strings: ['Saya adalah Ridwan, Murid SMK Bhina Karya angkatan 2022'
+          ],
+          typeSpeed: 100,
+          smartBackspace: true,
+          cursorChar: '__',
+      })
+  </script>
+   <script>
   setInterval("clock()", 1000);
 function clock(){
   w = new Date();
@@ -83,17 +114,6 @@ function clock(){
   }
 }
 </script>
-<button type="submit" class="pk"><a href="yo.html">Tailwind CSS</a></button>
 
-  <script type="text/javascript" charset="utf-8">
-    let typed = new Typed("#typed",
-      {
-        strings: ['Saya adalah Ridwan, Murid SMK Bhina Karya angkatan 2022'
-          ],
-          typeSpeed: 100,
-          smartBackspace: true,
-          cursorChar: '__',
-      })
-  </script>
   </body>
 </html>
